@@ -52,7 +52,7 @@ const Login = () => {
             </form>
 
             <div id="otpless-login-page"></div>
-            <Script type="text/javascript" src="https://otpless.com/auth.js" cid="G9923ZY6IS093O6CMX54O1N3O8COGH2L"></Script>
+            <Script type="text/javascript" src="https://otpless.com/auth.js" ></Script>
         </>
     )
 }
