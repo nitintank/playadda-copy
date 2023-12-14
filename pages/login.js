@@ -1,7 +1,5 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import Script from 'next/script'
-
 
 const Login = () => {
 
@@ -50,9 +48,6 @@ const Login = () => {
                 <input type="text" value={password} placeholder='Enter Password' id='password' onChange={handleChange} />
                 <input type="submit" value="submit" />
             </form>
-
-            <div id="otpless-login-page"></div>
-            <Script type="text/javascript" src="https://otpless.com/auth.js" />
         </>
     )
 }
