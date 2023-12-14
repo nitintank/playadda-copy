@@ -2,7 +2,15 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import Script from 'next/script'
 
-const login = () => {
+
+const Login = () => {
+    /* eslint-disable no-use-before-define */
+
+    useEffect(() => {
+        window.otpless = (otplessUser) => {
+         alert(JSON.stringify(otplessUser));
+        };
+       }, []);
 
     // const [user_name, setUser_Name] = useState()
     // const [password, setPassword] = useState()
@@ -36,12 +44,6 @@ const login = () => {
         console.log(response)
     }
 
-    useEffect(() => {
-        window.otpless = (otplessUser) => {
-         alert(JSON.stringify(otplessUser));
-        };
-       }, []);
-
     return (
         <>
             <form method='POST' onSubmit={handleSubmit}>
@@ -56,4 +58,4 @@ const login = () => {
     )
 }
 
-export default login
+export default Login
