@@ -4,7 +4,6 @@ import Script from 'next/script'
 
 
 const Login = () => {
-    /* eslint-disable no-use-before-define */
 
     useEffect(() => {
         window.otpless = (otplessUser) => {
@@ -53,7 +52,7 @@ const Login = () => {
             </form>
 
             <div id="otpless-login-page"></div>
-            <Script type="text/javascript" src="https://otpless.com/auth.js" cid="G9923ZY6IS093O6CMX54O1N3O8COGH2L" />
+            <script type="text/javascript" src="https://otpless.com/auth.js" cid="G9923ZY6IS093O6CMX54O1N3O8COGH2L"></script>
         </>
     )
 }
