@@ -65,7 +65,7 @@ export default function Home() {
       setShowerror('OTP Expired')
     }
     else if (response.message == 'User Register Successfully') {
-      setShowerror('User Register Successfully!!')
+      setShowerror('User Register Successfully')
       setLoginUsername(response.data.user_name)
     }
   }
