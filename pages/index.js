@@ -16,7 +16,7 @@ export default function Home() {
 
   const country_code = '91'
   const user_type_id = 10
-  const referred_code = ''
+  const referred_code = '42XhFC'
 
   const handleChange = (e) => {
     if (e.target.name == 'name') {
@@ -65,7 +65,7 @@ export default function Home() {
       setShowerror('OTP Expired')
     }
     else if (response.message == 'User Register Successfully') {
-      setShowerror('User Register Successfully!!')
+      setShowerror('User Register Successfully')
       setLoginUsername(response.data.user_name)
     }
   }

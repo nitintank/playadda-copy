@@ -321,7 +321,6 @@ input:-webkit-autofill:active{
 }
 
 .popup-middle-box button{
-    background-image: linear-gradient(to right top, #b6b326, #bdba22, #c4c01d, #cbc716, #d2ce0c);
     border: none;
     padding: 10px 30px;
     font-size: 20px;
@@ -329,7 +328,25 @@ input:-webkit-autofill:active{
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     cursor: pointer;
+    animation: abc 1.3s infinite;
 }
+
+@keyframes abc {
+    0% {
+        background-color: #cac725;
+        box-shadow: 0 0 3px #b6b326;
+    }
+  
+    50% {
+        background-color: #fdfa5a;
+        box-shadow: 0 0 15px #b6b326;
+    }
+  
+    100% {
+        background-color: #cac725;
+        box-shadow: 0 0 3px #b6b326;
+    }
+  }
 
 .note-text{
     font-size: 12px;
