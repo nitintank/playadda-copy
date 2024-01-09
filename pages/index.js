@@ -131,7 +131,7 @@ export default function Home() {
               </div>
               <input type="number" placeholder="Mobile Number" name='mobile' value={mobile} onChange={handleChange} className='phone-input' required />
               <button onClick={sendOTP} disabled={timer > 0}>
-                <p>OTP <i className="fa-solid fa-arrow-right"></i></p>
+                <p>OTPa <i className="fa-solid fa-arrow-right"></i></p>
               </button>
             </div>
             {showinvalid == 1 && <p className='red-error-text'>Invalid Valid Mobile Number</p>}
