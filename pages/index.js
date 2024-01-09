@@ -113,19 +113,10 @@ export default function Home() {
         <div className="wrapper">
           <form className="form-gap" method='POST' onSubmit={handleSubmit}>
             <Image src="/images/logo.png" width={200} height={200} alt="" className="logo-img" />
+            <h2 className='h2-title'>Register Now,</h2>
+            {/* Mobile Number */}
             <div className="input-box">
-              <i className='bx bxs-user'></i>
-              <input type="text" placeholder="Username" name='name' value={name} onChange={handleChange} required />
-            </div>
-            <div className="input-box-2">
-              <i className='bx bxs-lock-alt'></i>
-              <input placeholder="Password" type={showpassword} name='password' value={password} onChange={handleChange} required />
-              <a onClick={showPassword}>
-                {showpassword == 'password' && <i className="fa-solid fa-eye"></i>}
-                {showpassword == 'text' && <i className="fa-solid fa-eye-slash"></i>}
-              </a>
-            </div>
-            <div className="input-box">
+              <label htmlFor="">Mobile Number</label>
               <div className='input-box-inner'>
                 <i className="fa-solid fa-mobile-screen"></i>
                 <p>+91</p>
@@ -134,16 +125,55 @@ export default function Home() {
               <button onClick={sendOTP} disabled={timer > 0}>
                 <p>OTP <i className="fa-solid fa-arrow-right"></i></p>
               </button>
+              <button onClick={sendOTP} disabled={timer > 0} className="g-img">
+                <Image src="/images/g-icon.png" width={200} height={200} alt="" />
+              </button>
             </div>
             {showinvalid == 1 && <p className='red-error-text'>Invalid Valid Mobile Number</p>}
             {timer > 0 && <p>OTP Valid Upto {timer} Seconds</p>}
+            {/* OTP */}
             <div className="input-box">
-              <i className='bx bxs-user'></i>
+              <label htmlFor="">OTP</label>
+              <i className="fa-solid fa-list-ol"></i>
               <input type="number" placeholder="Enter OTP" name='verify_otp' value={verify_otp} onChange={handleChange} required />
             </div>
+            {/* Username */}
+            <div className="input-box">
+              <label htmlFor="">Your Name</label>
+              <i className='bx bxs-user'></i>
+              <input type="text" placeholder="Name" name='name' value={name} onChange={handleChange} required />
+            </div>
+            {/* Password */}
+            <div className="input-box-2">
+              <label htmlFor="">Password</label>
+              <i className='bx bxs-lock-alt'></i>
+              <input placeholder="Password" type={showpassword} name='password' value={password} onChange={handleChange} required />
+              <a onClick={showPassword}>
+                {showpassword == 'password' && <i className="fa-solid fa-eye"></i>}
+                {showpassword == 'text' && <i className="fa-solid fa-eye-slash"></i>}
+              </a>
+            </div>
             {showinvalid == 2 && <p className='red-error-text'>{showerror}</p>}
-            <button type="submit" className="btn">Join Now</button>
+            <button type="submit" className="btn">Join Now !</button>
+            <div className="or-btn">
+              <h4>OR</h4>
+            </div>
+            <Link href="https://alvo.chat/3Beo">
+              <h5 className="whatsApp-btn"><i className="fa-brands fa-whatsapp"></i>Get Instant ID On Whatsapp</h5>
+            </Link>
           </form>
+        </div>
+        <div className="wrapper">
+          <marquee width="100%" direction="left" height="80px">
+            <Image src="/images/extra-deposit.png" width={200} height={200} alt="" />
+            <Image src="/images/instant-withdrawal.png" width={200} height={200} alt="" />
+            <Image src="/images/Instant-Deposit.png" width={200} height={200} alt="" />
+            <Image src="/images/refer-bonus.png" width={200} height={200} alt="" />
+            <Image src="/images/extra-deposit.png" width={200} height={200} alt="" />
+            <Image src="/images/instant-withdrawal.png" width={200} height={200} alt="" />
+            <Image src="/images/Instant-Deposit.png" width={200} height={200} alt="" />
+            <Image src="/images/refer-bonus.png" width={200} height={200} alt="" />
+          </marquee>
         </div>
       </div>
 
