@@ -2,20 +2,23 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
     min-height: 100vh;
     background-image: url('/images/login_bg-compress.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: multiply;
+    background-blend-mode: hue;
+    padding: 20px 0px;
 }
 
 .logo-img {
@@ -25,20 +28,29 @@
     display: block;
 }
 
+.h2-title{
+    font-size: 30px;
+}
+
 .form-gap {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .wrapper {
     width: 420px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: none;
     backdrop-filter: blur(9px);
     color: #fff;
     border-radius: 12px;
     padding: 25px 20px;
+    /* background: linear-gradient(135deg, rgba(159, 154, 34, 1) 0%, rgba(24, 25, 0, 1) 100%); */
+    background: rgba(181, 179, 38, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
 }
 
 .wrapper h1 {
@@ -49,20 +61,21 @@
 .wrapper .input-box {
     position: relative;
     width: 100%;
-    height: 50px;
+    height: auto;
 }
 
 .input-box input {
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: #2d2c25;
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
     font-size: 16px;
     color: #fff;
-    padding: 20px 45px 20px 40px;
+    padding: 12px 45px 12px 40px;
+    margin-top: 2px;
 }
 
 .input-box input::placeholder {
@@ -72,15 +85,15 @@
 .input-box i {
     position: absolute;
     left: 20px;
-    top: 30%;
+    top: 55%;
     transform: translate(-50%);
     font-size: 20px;
 }
 
 .input-box button {
     position: absolute;
-    right: -44px;
-    top: 0%;
+    right: -60px;
+    top: 34.5%;
     transform: translate(-50%);
     font-size: 20px;
     display: flex;
@@ -92,11 +105,11 @@
     color: white;
 }
 
-.input-box button:disabled{
+.input-box button:disabled {
     cursor: not-allowed;
 }
 
-.red-error-text{
+.red-error-text {
     padding: 0px 10px;
     color: red;
     margin: auto;
@@ -107,14 +120,27 @@
     align-items: center;
     gap: 15px;
     margin-bottom: 0px;
-    padding: 0px 8px;
+    padding: 0px 22px;
     height: 50px;
-    background-color: #b5b325;
-    border-radius: 0px 40px 40px 0px;
+    background: linear-gradient(135deg, rgba(225,218,53,1) 0%, rgba(20,20,0,1) 100%);
+    border-radius: 0px 10px 10px 0px;
 }
 
 .input-box button i {
     position: static;
+}
+
+.g-img{
+    position: absolute;
+    top: -82px !important;
+    right: -75px !important;
+    height: 150px;
+    width: 130px;
+}
+
+.g-img img{
+    height: 150px;
+    width: 130px;
 }
 
 /* Input Box CSS */
@@ -122,20 +148,21 @@
 .input-box-2 {
     position: relative;
     width: 100%;
-    height: 50px;
+    height: auto;
 }
 
 .input-box-2 input {
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: #2d2c25;
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
     font-size: 16px;
     color: #fff;
-    padding: 20px 45px 20px 40px;
+    padding: 12px 45px 12px 40px;
+    margin-top: 2px;
 }
 
 .input-box-2 input::placeholder {
@@ -145,7 +172,7 @@
 .input-box-2 i {
     position: absolute;
     left: 20px;
-    top: 30%;
+    top: 55%;
     transform: translate(-50%);
     font-size: 20px;
     cursor: pointer;
@@ -154,7 +181,7 @@
 .input-box-2 a {
     position: absolute;
     right: 50px;
-    top: 30%;
+    top: 55%;
     transform: translate(-50%);
     font-size: 20px;
 }
@@ -163,7 +190,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 30%;
+    top: 52%;
     left: 20px;
 }
 
@@ -172,7 +199,7 @@
 }
 
 .phone-input {
-    padding: 20px 45px 20px 65px !important;
+    padding: 12px 45px 12px 65px !important;
 }
 
 .wrapper .remember-forgot {
@@ -184,13 +211,11 @@
 .remember-forgot label input {
     accent-color: #fff;
     margin-right: 3px;
-
 }
 
 .remember-forgot a {
     color: #fff;
     text-decoration: none;
-
 }
 
 .remember-forgot a:hover {
@@ -199,23 +224,50 @@
 
 .wrapper .btn {
     width: 100%;
-    height: 45px;
-    background: #fff;
-    border: none;
+    height: auto;
+    background: linear-gradient(135deg, rgba(225,218,53,1) 0%, rgba(20,20,0,1) 100%);
+    border: 1px solid black;
     outline: none;
-    border-radius: 40px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
-    font-size: 16px;
-    color: #333;
+    font-size: 20px;
+    color: white;
     font-weight: 600;
+    padding: 5px 10px;
+}
+
+.wrapper .whatsApp-btn {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(135deg, rgba(75,162,34,1) 0%, rgba(20,20,0,1) 100%);
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.wrapper a{
+    text-decoration: none;
+}
+
+.wrapper .whatsApp-btn i{
+    font-size: 22px;
 }
 
 .wrapper .register-link {
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
-
 }
 
 .register-link p a {
@@ -236,25 +288,71 @@
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Change the white to any color */
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
     -webkit-background-clip: text;
     -webkit-text-fill-color: #ffffff;
     transition: background-color 5000s ease-in-out 0s;
-    box-shadow: inset 0 0 20px 20px #23232329;
-    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: inset 0 0 20px 20px #2d2c25;
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+
+.or-btn{
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.or-btn h4{
+    color: white;
+    text-align: center;
+}
+
+.or-btn h4::before{
+    content: "";
+    width: calc(50% - 25px);
+    position: absolute;
+    left: 0;
+    top: calc(50% - 1px);
+    background: #fff;
+    height: 2px;
+}
+
+.or-btn h4::after{
+    content: "";
+    width: calc(50% - 25px);
+    position: absolute;
+    right: 0;
+    left: inherit;
+    bottom: calc(50% - 1px);
+    background: #fff;
+    height: 2px;
+}
+
+.wrapper marquee img{
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Responsive Code */
+
+@media (max-width:425px) {
+    .wrapper{
+        width: 98%;
+    }
 }
 
 /* Popup Code */
 
-.popup-code{
+.popup-code {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(to right top, #b6b326, #bdba22, #c4c01d, #cbc716, #d2ce0c);
@@ -266,7 +364,7 @@ input:-webkit-autofill:active{
     left: 0px;
 }
 
-.popup-main-box{
+.popup-main-box {
     width: 420px;
     height: auto;
     display: flex;
@@ -274,12 +372,12 @@ input:-webkit-autofill:active{
     align-items: center;
 }
 
-.popup-main-box img{
+.popup-main-box img {
     width: 90%;
     height: auto;
 }
 
-.popup-middle-box{
+.popup-middle-box {
     width: 95%;
     height: auto;
     background-color: white;
@@ -292,35 +390,35 @@ input:-webkit-autofill:active{
     gap: 10px;
 }
 
-.congrats-para{
+.congrats-para {
     color: red;
     font-size: 30px;
     font-weight: 900;
 }
 
-.won-para{
+.won-para {
     color: black;
     font-size: 22px;
     font-weight: 900;
 }
 
-.won-amount{
+.won-amount {
     color: red;
     font-size: 80px;
     font-weight: 900;
 }
 
-.won-amount sup{
+.won-amount sup {
     font-size: 40px;
 }
 
-.username-para{
+.username-para {
     color: red;
     font-size: 15px;
     font-weight: 900;
 }
 
-.popup-middle-box button{
+.popup-middle-box button {
     border: none;
     padding: 10px 30px;
     font-size: 20px;
@@ -336,18 +434,18 @@ input:-webkit-autofill:active{
         background-color: #cac725;
         box-shadow: 0 0 3px #b6b326;
     }
-  
+
     50% {
         background-color: #fdfa5a;
         box-shadow: 0 0 15px #b6b326;
     }
-  
+
     100% {
         background-color: #cac725;
         box-shadow: 0 0 3px #b6b326;
     }
-  }
+}
 
-.note-text{
+.note-text {
     font-size: 12px;
 }
