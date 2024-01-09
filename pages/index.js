@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import Link from 'next/link'
+import Script from 'next/script'
 
 export default function Home() {
 
@@ -97,6 +98,17 @@ export default function Home() {
 
   return (
     <>
+      {/* <!-- Google tag (gtag.js) --> */}
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-ZCL1QE0P7K" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-ZCL1QE0P7K');
+        `}
+      </Script>
       <div className="body">
         <div className="wrapper">
           <form className="form-gap" method='POST' onSubmit={handleSubmit}>
