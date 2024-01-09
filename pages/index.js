@@ -164,15 +164,13 @@ export default function Home() {
           </form>
         </div>
         <div className="wrapper">
-          <marquee width="100%" direction="left" height="80px">
-            <Image src="/images/extra-deposit.png" width={200} height={200} alt="" />
-            <Image src="/images/instant-withdrawal.png" width={200} height={200} alt="" />
-            <Image src="/images/Instant-Deposit.png" width={200} height={200} alt="" />
-            <Image src="/images/refer-bonus.png" width={200} height={200} alt="" />
-            <Image src="/images/extra-deposit.png" width={200} height={200} alt="" />
-            <Image src="/images/instant-withdrawal.png" width={200} height={200} alt="" />
-            <Image src="/images/Instant-Deposit.png" width={200} height={200} alt="" />
-            <Image src="/images/refer-bonus.png" width={200} height={200} alt="" />
+          <marquee width="100%" direction="left" height="80px" behavior='scroll'>
+            <div className="marquee-content">
+              <Image priority={true} src="/images/extra-deposit.png" width={200} height={200} alt="" />
+              <Image priority={true} src="/images/instant-withdrawal.png" width={200} height={200} alt="" />
+              <Image priority={true} src="/images/Instant-Deposit.png" width={200} height={200} alt="" />
+              <Image priority={true} src="/images/refer-bonus.png" width={200} height={200} alt="" />
+            </div>
           </marquee>
         </div>
       </div>
