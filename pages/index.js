@@ -110,6 +110,16 @@ export default function Home() {
         `}
       </Script>
       <div className="body">
+      <div className="wrapper">
+          <marquee width="100%" direction="left" height="80px" behavior='scroll'>
+            <div className="marquee-content">
+              <Image priority={true} src="/images/extra-deposit.png" width={200} height={200} alt="" />
+              <Image priority={true} src="/images/instant-withdrawal.png" width={200} height={200} alt="" />
+              <Image priority={true} src="/images/Instant-Deposit.png" width={200} height={200} alt="" />
+              <Image priority={true} src="/images/refer-bonus.png" width={200} height={200} alt="" />
+            </div>
+          </marquee>
+        </div>
         <div className="wrapper">
           <form className="form-gap" method='POST' onSubmit={handleSubmit}>
             <Image src="/images/logo.png" width={200} height={200} alt="" className="logo-img" />
@@ -162,16 +172,6 @@ export default function Home() {
               <h5 className="whatsApp-btn"><i className="fa-brands fa-whatsapp"></i>Get Instant ID On Whatsapp</h5>
             </Link>
           </form>
-        </div>
-        <div className="wrapper">
-          <marquee width="100%" direction="left" height="80px" behavior='scroll'>
-            <div className="marquee-content">
-              <Image priority={true} src="/images/extra-deposit.png" width={200} height={200} alt="" />
-              <Image priority={true} src="/images/instant-withdrawal.png" width={200} height={200} alt="" />
-              <Image priority={true} src="/images/Instant-Deposit.png" width={200} height={200} alt="" />
-              <Image priority={true} src="/images/refer-bonus.png" width={200} height={200} alt="" />
-            </div>
-          </marquee>
         </div>
       </div>
 
