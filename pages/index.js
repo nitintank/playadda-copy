@@ -113,7 +113,7 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
         `}
       </Script>
       <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=331707226505294&ev=PageView&noscript=1" />
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=331707226505294&ev=PageView&noscript=1" />
       </noscript>
       {/* <!-- End Meta Pixel Code --> */}
       {/* <!-- Google tag (gtag.js) --> */}
