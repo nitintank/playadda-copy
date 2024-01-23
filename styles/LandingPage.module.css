@@ -5,6 +5,10 @@
     padding-bottom: 20px;
 }
 
+.body2 a{
+    text-decoration: none;
+}
+
 .head{
     width: 100%;
     height: 150px;
