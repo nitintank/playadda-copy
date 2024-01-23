@@ -12,12 +12,18 @@ const LandingPage = () => {
             </Head>
             <div className={LandingPageStyle.body2}>
                 <div className={LandingPageStyle.head}>
-
+                <Image src="/images/logo.png" width={200} height={200} alt="" className={LandingPageStyle.logoImg} />
                 </div>
                 <Link href="/">
-                    <div className={LandingPageStyle.box}>
-                        <h2>GET 10% BONUS ON EVERY DEPOSIT<br />{`INDIA'S OWN EXCHANGE`}</h2>
-                        <hr className={LandingPageStyle.gradientLine}></hr>
+                    <div className={LandingPageStyle.wrapper}>
+                        <marquee width="100%" direction="left" height="80px" behavior='scroll'>
+                            <div className="marquee-content">
+                                <Image priority={true} src="/images/extra-deposit.png" width={200} height={200} alt="" />
+                                <Image priority={true} src="/images/instant-withdrawal.png" width={200} height={200} alt="" />
+                                <Image priority={true} src="/images/Instant-Deposit.png" width={200} height={200} alt="" />
+                                <Image priority={true} src="/images/refer-bonus.png" width={200} height={200} alt="" />
+                            </div>
+                        </marquee>
                     </div>
                 </Link>
                 <Link href="/">
