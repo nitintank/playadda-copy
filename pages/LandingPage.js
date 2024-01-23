@@ -16,7 +16,7 @@ const LandingPage = () => {
                 </div>
                 <Link href="/">
                     <div className={LandingPageStyle.box}>
-                        <h2>GET 10% BONUS ON EVERY DEPOSIT<br />INDIA'S OWN EXCHANGE</h2>
+                        <h2>GET 10% BONUS ON EVERY DEPOSIT<br />{`INDIA'S OWN EXCHANGE`}</h2>
                         <hr className={LandingPageStyle.gradientLine}></hr>
                     </div>
                 </Link>
