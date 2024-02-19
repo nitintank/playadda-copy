@@ -199,7 +199,7 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
           <div className="popup-middle-box">
             <p className='congrats-para'>Congratulations!</p>
             <p className='won-para'>You Have Won</p>
-            <p className='won-amount'>99<sup>₹</sup></p>
+            <p className='won-amount'>500<sup>%</sup></p>
             <p className='won-para'>Welcome Bouns</p>
             <p className='username-para'>Username - {loginusername}</p>
             <p className='username-para'>Mobile - {mobile}</p>
