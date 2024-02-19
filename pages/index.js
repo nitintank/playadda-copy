@@ -17,7 +17,7 @@ export default function Home() {
 
   const country_code = '91'
   const user_type_id = 10
-  const referred_code = '42XhFC'
+  const referred_code = ''
 
   const handleChange = (e) => {
     if (e.target.name == 'name') {
@@ -203,7 +203,7 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
             <p className='won-para'>Welcome Bouns</p>
             <p className='username-para'>Username - {loginusername}</p>
             <p className='username-para'>Mobile - {mobile}</p>
-            <Link href="https://shyamplay.com/login">
+            <Link href="https://shyamplay.com/auth/login">
               <button>Claim The Bonus</button>
             </Link>
             <p className='note-text'>Note* Take a screenshot of the above details</p>
