@@ -17,7 +17,7 @@ export default function Home() {
 
   const country_code = '91'
   const user_type_id = 10
-  const referred_code = '42XhFC'
+  const referred_code = ''
 
   const handleChange = (e) => {
     if (e.target.name == 'name') {
