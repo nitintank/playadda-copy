@@ -98,6 +98,9 @@ export default function Home() {
 
   return (
     <>
+      <Script id="website-subscribe">
+        {`fbq('track', 'Subscribe');`}
+      </Script>
       {/* <!-- Google tag (gtag.js) --> */}
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-ZCL1QE0P7K" />
       <Script id="google-analytics">
